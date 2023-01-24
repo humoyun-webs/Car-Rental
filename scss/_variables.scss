@@ -1,0 +1,19 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --carCard-bg: #F5F5F5;
+    --border: #E5E7EA;
+    --descs: #555555;
+    --svg-color: invert(0);
+    --modal-card: #FFFFFF;
+
+    .active{
+        --white: #1C1C1C;
+        --carCard-bg: #272727;
+        --black: #fff;
+        --border: #333;
+        --descs: #fff;
+        --svg-color: invert(1);
+        --modal-card: #272727;
+    }
+}

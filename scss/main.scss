@@ -1,0 +1,20 @@
+@import "./general";
+@import "./variables";
+@import "./container";
+@import "./loader";
+@import "./blocks/blocks";
+
+
+.scrolTop{
+    position: fixed;
+    padding: 26px 28px;
+    border-radius: 50%;
+    background-color: #299764;
+    z-index: 3;
+    bottom: 3%;
+    right: 5%;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    transition: all 0.8s;
+    border: none;
+}

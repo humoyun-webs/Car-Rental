@@ -1,0 +1,536 @@
+.footer {
+    background: var(--white);
+    border-top: 1.5px solid var(--border);
+    padding: 40px 0;
+
+    .footerWrapper {
+
+        .footerTop,
+        .footerBottom {
+            display: flex;
+            align-items: center;
+
+            .footerList {
+                width: 814px;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+
+                .FooterListItem {
+
+                    .FooterListItemHeading {
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: var(--black);
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                        margin-bottom: 16px;
+                    }
+
+                    .footerListItemLink {
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: var(--black);
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                        text-decoration: none;
+                        display: block;
+                        margin-bottom: 12px;
+
+                        &:hover {
+                            font-family: 'Montserrat';
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-decoration-line: underline;
+                            color: var(--black);
+                            flex: none;
+                            order: 2;
+                            flex-grow: 0;
+                        }
+                    }
+                }
+
+            }
+
+            .footerContents {
+                margin-right: 65px;
+
+                .footer-desc {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: var(--black);
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                    width: 240px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .footerBottom {
+            padding-top: 40px;
+            align-items: flex-start;
+
+            .footerBottomtext {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--black);
+                width: 190px;
+                margin-right: 115px;
+                margin-top: 40px;
+            }
+
+            .footerList {
+                padding-top: 40px;
+                width: 612px;
+
+                .socialMedias {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 40px);
+                    list-style-type: none;
+                    gap: 15px;
+
+                    .SocialMediasItem {
+                        background: #299764;
+                        border-radius: 50%;
+                        padding: 10px 5px 5px 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: all 0.3s;
+
+                        &:nth-child(1) {
+                            &:hover {
+                                background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:hover {
+                                background-color: #4285F4;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:hover {
+                                background-color: #007bff;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            &:hover {
+                                background-color: #00ff33;
+                            }
+                        }
+
+                        .socialMEdiaItemsLink {
+                            text-decoration: none;
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and(max-width: 992px){
+    .footer {
+            background: var(--white);
+            border-top: 1.5px solid var(--border);
+            padding: 40px 0;
+    
+            .footerWrapper {
+    
+                .footerTop,
+                .footerBottom {
+                    display: flex;
+                    align-items: center;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+    
+                    .footerList {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+    
+                        .FooterListItem {
+                            margin-bottom: 40px;
+    
+                            .FooterListItemHeading {
+                                font-family: 'Montserrat';
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: var(--black);
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                                margin-bottom: 16px;
+                                text-align: left;
+                            }
+    
+                            .footerListItemLink {
+                                font-family: 'Montserrat';
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: var(--black);
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                                text-decoration: none;
+                                display: block;
+                                margin-bottom: 12px;
+                                text-align-last: left;
+    
+                                &:hover {
+                                    font-family: 'Montserrat';
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    text-decoration-line: underline;
+                                    color: var(--black);
+                                    flex: none;
+                                    order: 2;
+                                    flex-grow: 0;
+                                }
+                            }
+                        }
+    
+                    }
+    
+                    .footerContents {
+                        margin-right: 65px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-bottom: 40px;
+
+                        a{
+                           margin: 0;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           margin-bottom: 10px;
+
+                        }
+    
+                        .footer-desc {
+                            font-family: 'Montserrat';
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 20px;
+                            color: var(--black);
+                            flex: none;
+                            order: 1;
+                            flex-grow: 0;
+                            width: 200px;
+                            margin: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .footerBottom {
+                    padding: 0;
+                    align-items: flex-start;
+                    margin-top: 0;
+                    margin: 0;
+    
+                    .footerBottomtext {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: var(--black);
+                        width: 190px;
+                        margin-right: 115px;
+                        margin-top: 40px;
+                        text-align: center;
+                        margin: auto;
+                    }
+    
+                    .footerList {
+                        padding-top: 40px;
+                        width: 70%;
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        justify-content: center;
+
+    
+                        .socialMedias {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(4, 40px);
+                            list-style-type: none;
+                            gap: 15px;
+                            justify-content: start;
+    
+                            .SocialMediasItem {
+                                background: #299764;
+                                border-radius: 50%;
+                                padding: 10px 5px 5px 5px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                transition: all 0.3s;
+    
+                                &:nth-child(1) {
+                                    &:hover {
+                                        background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                                    }
+                                }
+    
+                                &:nth-child(2) {
+                                    &:hover {
+                                        background-color: #4285F4;
+                                    }
+                                }
+    
+                                &:nth-child(3) {
+                                    &:hover {
+                                        background-color: #007bff;
+                                    }
+                                }
+    
+                                &:nth-child(4) {
+                                    &:hover {
+                                        background-color: #00ff33;
+                                    }
+                                }
+    
+                                .socialMEdiaItemsLink {
+                                    text-decoration: none;
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+}
+@media only screen and(max-width: 768px){
+    .footer {
+            background: var(--white);
+            border-top: 1.5px solid var(--border);
+            padding: 40px 0;
+            position: relative;
+    
+            .footerWrapper {
+    
+                .footerTop,
+                .footerBottom {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+    
+                    .footerList {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+    
+                        .FooterListItem {
+                            margin-bottom: 40px;
+                            text-align: left;
+    
+                            .FooterListItemHeading {
+                                font-family: 'Montserrat';
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: var(--black);
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                                margin-bottom: 16px;
+                                text-align: left;
+                            }
+    
+                            .footerListItemLink {
+                                font-family: 'Montserrat';
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 17px;
+                                color: var(--black);
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                                text-decoration: none;
+                                display: block;
+                                margin-bottom: 12px;
+                                text-align: left;
+
+                              
+    
+                                &:hover {
+                                    font-family: 'Montserrat';
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    text-decoration-line: underline;
+                                    color: var(--black);
+                                    flex: none;
+                                    order: 2;
+                                    flex-grow: 0;
+                                }
+                            }
+                        }
+    
+                    }
+    
+                    .footerContents {
+                        margin-right: 65px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 40px;
+
+                        a{
+                           margin: 0;
+                           display: flex;
+                           justify-content: start;
+                           align-items: center;
+                           margin-bottom: 10px;
+
+                        }
+    
+                        .footer-desc {
+                            font-family: 'Montserrat';
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 20px;
+                            color: var(--black);
+                            flex: none;
+                            order: 1;
+                            flex-grow: 0;
+                            width: 200px;
+                            margin: 0;
+                            margin: auto;
+                            text-align: left;
+                            margin: 0;
+                        }
+                    }
+                }
+    
+                .footerBottom {
+                    padding: 0;
+                    align-items: flex-start;
+                    margin-top: 0;
+                    margin: 0;
+    
+                    .footerBottomtext {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 24px;
+                        color: var(--black);
+                        width: 140px;
+                        margin-right: 115px;
+                        margin-top: 40px;
+                        text-align: center;
+                        position: absolute;
+                        top: 10%;
+                        right: 0;
+                        margin: 0;
+
+                    }
+    
+                    .footerList {
+                        padding-top: 40px;
+                        margin: auto;
+                        padding: 0;
+                        margin-top: 40px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+
+    
+                        .socialMedias {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(4, 40px);
+                            list-style-type: none;
+                            gap: 15px;
+                            justify-content: start;
+                            margin: auto;
+    
+                            .SocialMediasItem {
+                                background: #299764;
+                                border-radius: 50%;
+                                padding: 10px 5px 5px 5px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                transition: all 0.3s;
+    
+                                &:nth-child(1) {
+                                    &:hover {
+                                        background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                                    }
+                                }
+    
+                                &:nth-child(2) {
+                                    &:hover {
+                                        background-color: #4285F4;
+                                    }
+                                }
+    
+                                &:nth-child(3) {
+                                    &:hover {
+                                        background-color: #007bff;
+                                    }
+                                }
+    
+                                &:nth-child(4) {
+                                    &:hover {
+                                        background-color: #00ff33;
+                                    }
+                                }
+    
+                                .socialMEdiaItemsLink {
+                                    text-decoration: none;
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+}
+

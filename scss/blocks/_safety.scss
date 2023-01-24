@@ -1,0 +1,231 @@
+.Safety {
+    margin-bottom: 160px;
+
+    .safetyWrapper {
+        background: var(--white);
+        border: 1.5px solid var(--border);
+        border-radius: 20px;
+        padding: 40px 70px 0 32px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .safetyContents {
+            width: 50%;
+            padding-bottom: 32px;
+
+            .safetyHeading {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+                color: var(--black);
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin-bottom: 10px;
+            }
+
+            .SafetyDesc {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--descs);
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin-bottom: 94px;
+            }
+
+            .safetyCards {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                gap: 10px;
+
+                .safetyCard {
+                    background: var(--carCard-bg);
+                    border-radius: 16px;
+                    padding: 79px 15px 15px 15px;
+                    position: relative;
+                    transition: all 0.3s;
+
+                    &::before {
+                        filter: var(--svg-color);
+                    }
+
+
+
+                    .safetyCardText {
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        display: flex;
+                        align-items: flex-end;
+                        color: var(--descs);
+                    }
+
+                    &:nth-child(1) {
+                        &::before {
+                            content: url(../img/SafetyIcons/icon1.svg);
+                            position: absolute;
+                            top: 15%;
+                            right: 10%;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &::before {
+                            content: url(../img/SafetyIcons/icon2.svg);
+                            position: absolute;
+                            top: 15%;
+                            right: 10%;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &::before {
+                            content: url(../img/SafetyIcons/icon3.svg);
+                            position: absolute;
+                            top: 15%;
+                            right: 10%;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #299764;
+
+                        &::before {
+                            filter: invert(0);
+                        }
+
+                        .safetyCardText {
+                            font-family: 'Montserrat';
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            display: flex;
+                            align-items: flex-end;
+                            color: #fff;
+                        }
+
+                        &:nth-child(1) {
+                            &::before {
+                                content: url(../img/SafetyIcons/icon1Light.svg);
+                                position: absolute;
+                                top: 15%;
+                                right: 10%;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &::before {
+                                content: url(../img/SafetyIcons/Icon2light.svg);
+                                position: absolute;
+                                top: 15%;
+                                right: 10%;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &::before {
+                                content: url(../img/SafetyIcons/Icon3light.svg);
+                                position: absolute;
+                                top: 15%;
+                                right: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .safetyImages {
+            position: relative;
+            display: block;
+            z-index: 2;
+        }
+
+        &::after {
+            position: absolute;
+            content: url(../img//SafetyIcons/SafetyImageBack.png);
+            right: 9%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .Safety {
+        margin-bottom: 160px;
+
+        .safetyWrapper {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 70px 0 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .safetyContents{
+                width: 100%;
+            }
+            &::after{
+                display: none;
+            }
+
+
+                    img{
+                        width: 284px;
+                        height: 332px;
+                    }
+
+        }
+
+    }
+}
+@media only screen and (max-width: 526px) {
+    .Safety {
+        margin-bottom: 160px;
+
+        .safetyWrapper {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 40px 0 32px;
+            display: flex;
+
+            .safetyContents{
+                
+
+                .safetyCards{
+                    display: grid;
+                    grid-template-columns: 2fr;
+                    justify-content: center;
+                    flex-direction: column-reverse;
+                }
+            }
+            
+
+
+
+
+            &::after{
+                content: "";
+            }
+
+
+                    .safetyImages{
+                        width: 284px;
+                        height: 332px;
+                        display: none;
+                    }
+
+        }
+
+    }
+}

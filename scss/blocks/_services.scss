@@ -1,0 +1,427 @@
+.services {
+    margin-bottom: 160px;
+
+    .ServicesHeading {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: var(--black);
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-bottom: 10px;
+    }
+
+    .ServicesDesc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 auto;
+        width: 684px;
+        text-align: center;
+        color: var(--black);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-bottom: 40px;
+    }
+
+    .servicesMain {
+        display: grid;
+        grid-template-columns: repeat(2, 590px);
+        gap: 20px;
+
+        .ServicesCard {
+            background: var(--carCard-bg);
+            border-radius: 20px;
+            padding: 40px 44px 40px 32px;
+            transition: all 0.3s;
+
+
+            &:nth-child(1) {
+                .servicesCardLeft {
+                    &::after {
+                        content: url(../img//icons/BookOnlineIcon.svg);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                .servicesCardLeft {
+                    &::after {
+                        content: url(../img//icons/GuarantedCar.svg);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .servicesCardLeft {
+                    &::after {
+                        content: url(../img//icons/CustomerService.svg);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .servicesCardLeft {
+                    &::after {
+                        content: url(../img//icons/NoReservation.svg);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: #299764;
+
+                &:nth-child(1) {
+                    .servicesCardLeft {
+                        &::after {
+                            content: url(../img//icons/BookOnlineIconLight.svg);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .servicesCardLeft {
+                        &::after {
+                            content: url(../img//icons/GuarantedCarLight.svg);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .servicesCardLeft {
+                        &::after {
+                            content: url(../img//icons/CustomerServiceLight.svg);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .servicesCardLeft {
+                        &::after {
+                            content: url(../img//icons/NoReservationLight.svg);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+
+                .ServiceCard-heading {
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: #fff;
+                    width: 55%;
+                    margin-bottom: 10px;
+                }
+
+                .servicesCard-desc {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    width: 354px;
+                }
+            }
+
+            .servicesCardLeft {
+                position: relative;
+
+            }
+
+            .ServiceCard-heading {
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 39px;
+                color: var(--black);
+                width: 55%;
+                margin-bottom: 10px;
+            }
+
+            .servicesCard-desc {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--black);
+                width: 354px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .services {
+        .ServicesHeading {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-bottom: 10px;
+        }
+
+        .ServicesDesc {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 auto;
+            width: 684px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin-bottom: 40px;
+        }
+
+        .servicesMain {
+            display: grid;
+            grid-template-columns: repeat(2, 350px);
+            justify-content: center;
+            gap: 20px;
+
+
+            .ServicesCard {
+
+                &:hover {
+                    .ServiceCard-heading {
+                        font-size: 19px;
+                        line-height: 30px;
+                    }
+
+                    .servicesCard-desc {
+                        font-family: 'Montserrat';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #fff;
+                        width: 250px;
+                    }
+                }
+
+                .ServiceCard-heading {
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 19px;
+                    line-height: 39px;
+                    color: var(--black);
+                    width: 55%;
+                    margin-bottom: 10px;
+                    line-height: 30px;
+                }
+
+                .servicesCard-desc {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: var(--black);
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services {
+        .ServicesHeading {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 44px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-bottom: 10px;
+        }
+
+        .ServicesDesc {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 auto;
+            width: 484px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin-bottom: 40px;
+        }
+
+        .servicesMain {
+            display: grid;
+            grid-template-columns: repeat(2, 260px);
+            justify-content: center;
+            gap: 20px;
+
+
+            .ServicesCard {
+
+                &:hover {
+                    .ServiceCard-heading {
+                        font-size: 16px;
+                        line-height: 30px;
+                        width: 60%;
+                    }
+
+                    .servicesCard-desc {
+                        font-family: 'Montserrat';
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #fff;
+                        width: 200px;
+                    }
+                }
+
+                .ServiceCard-heading {
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 39px;
+                    color: var(--black);
+                    width: 60%;
+                    margin-bottom: 10px;
+                    line-height: 30px;
+                }
+
+                .servicesCard-desc {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: var(--black);
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .services {
+        .ServicesHeading {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 44px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-bottom: 10px;
+        }
+
+        .ServicesDesc {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            margin: 0 auto;
+            width: 324px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin-bottom: 40px;
+        }
+
+        .servicesMain {
+            display: grid;
+            grid-template-columns: 280px;
+            justify-content: center;
+            gap: 20px;
+
+
+            .ServicesCard {
+
+                &:hover {
+                    .ServiceCard-heading {
+                        font-size: 16px;
+                        line-height: 30px;
+                        width: 60%;
+                    }
+
+                    .servicesCard-desc {
+                        font-family: 'Montserrat';
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #fff;
+                        width: 200px;
+                    }
+                }
+
+                .ServiceCard-heading {
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 39px;
+                    color: var(--black);
+                    width: 60%;
+                    margin-bottom: 10px;
+                    line-height: 30px;
+                }
+
+                .servicesCard-desc {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: var(--black);
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

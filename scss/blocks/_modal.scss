@@ -1,0 +1,193 @@
+.modal-window {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    display: none;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    z-index: 34;
+
+    .modal-card {
+        background-color: var(--modal-card);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        width: 50%;
+        padding: 40px 32px;
+        top: 20%;
+        left: 25%;
+        position: relative;
+
+        .modal-heading {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            color: var(--black);
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-bottom: 10px;
+        }
+
+        .modal-desc {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--descs);
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin-bottom: 32px;
+        }
+        .modal-form{
+            position: relative;
+            #hidePassword{
+                position: absolute;
+                bottom: 23%;
+                right: 5%;
+                cursor: pointer;
+            }
+            #ShowPassword{
+                position: absolute;
+                    bottom: 20%;
+                    right: 5%;
+                    cursor: pointer;
+            }
+            img{
+                filter: var(--svg-color);
+            }
+            .shownow{
+                display: block;
+            }
+            .hidenow{
+                display: none;
+            }
+            .modal-inputs {
+                background: var(--white);
+                border: 2px solid #299764;
+                border-radius: 82px;
+                width: 100%;
+                padding: 18px 30px;
+                color: var(--black);
+                vertical-align: middle;
+                outline: 3px solid var(--carCard-bg);
+                border: none;
+    
+                &::placeholder {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: var(--descs);
+                }
+    
+                &:focus {
+                    outline: none;
+                    border: none;
+                    outline: 3px solid #299764;
+                }
+    
+                &:nth-child(1) {
+                    margin-bottom: 16px;
+                }
+    
+                &:nth-child(2) {
+                    margin-bottom: 8px;
+                }
+            }
+
+        }
+
+
+        .login-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+
+            .password-info {
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FF3B30;
+            }
+
+            .resetPassword {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: right;
+                color: var(--descs);
+            }
+
+        }
+
+        .createNew {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: var(--black);
+            margin-bottom: 32px;
+        }
+
+        .login {
+            width: 100%;
+            background: #299764;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 30px;
+            gap: 8px;
+            border: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: #186b44;
+            }
+
+
+        }
+        #closemodal{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 18px;
+            gap: 5px;
+            background: var(--border);
+            border-radius: 100px;
+            outline: none;
+            border: none;
+            top: 5%;
+            right: 5%;
+            cursor: pointer;
+        }
+
+    }
+}

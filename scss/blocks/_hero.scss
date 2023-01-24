@@ -1,0 +1,415 @@
+.hero {
+    margin-bottom: 100px;
+    position: relative;
+    top: 83px;
+
+    .heroWrapper {
+        position: relative;
+        
+
+        .heroCarousels {
+            display: grid;
+            grid-template-columns: repeat(3, 100%);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+
+            .Herowrapper {
+                padding: 100px 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                scroll-behavior: smooth;
+                transition: all 0.8s;
+
+                &:nth-child(1) {
+                    background-image: url(../img/images/herobg1.jpg);
+                    width: 100%;
+                }
+
+                &:nth-child(2) {
+                    background-image: url(../img/images/herobg2.jpg);
+                }
+
+                &:nth-child(3) {
+                    background-image: url(../img/images/herobg3.png);
+                }
+
+                .heading {
+                    text-align: center;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-align: center;
+                    color: #fff;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+
+                .desc {
+                    width: 416px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #fff;
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                    margin-bottom: 268px;
+                }
+            }
+        }
+
+        .carousel-sindicators-hero {
+            position: absolute;
+            right: 8%;
+            bottom: 18%;
+
+            .arrows-hero {
+                padding: 12px 15px;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+
+                &:nth-child(1) {
+                    margin-right: 10px;
+
+                    img {
+                        transform: rotateZ(180deg);
+                    }
+                }
+            }
+        }
+
+        .searchPart {
+            position: relative;
+
+            .searchCars {
+                background: var(--white);
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                border-radius: 100px;
+                border: none;
+                padding: 22px 30px;
+                width: 60%;
+                display: block;
+                margin: 0 auto;
+                transform: translateY(-50%);
+                color: #c9d1d9;
+                vertical-align: middle;
+
+                &::placeholder {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: var(--descs);
+                }
+
+                &:focus {
+                    outline: 2px solid rgba(4, 189, 106, 0.382);
+                }
+            }
+
+            .searchBtn {
+                position: absolute;
+                top: -47.4%;
+                background: #299764;
+                border-radius: 100px;
+                border: none;
+                padding: 18px;
+                right: 20.12%;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 992px){
+    .hero {
+            margin-bottom: 100px;
+            position: relative;
+            top: 83px;
+    
+            .heroWrapper {
+                position: relative;
+    
+    
+                .heroCarousels {
+                    display: grid;
+                    grid-template-columns: repeat(3, 100%);
+                    overflow-x: hidden;
+                    scroll-behavior: smooth;
+    
+                    .Herowrapper {
+                        padding: 100px 0;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        scroll-behavior: smooth;
+                        transition: all 0.8s;
+    
+                        &:nth-child(1) {
+                            background-image: url("../../img/images/herotabletbg1.jpg");
+                            width: 100%;
+                        }
+    
+                        &:nth-child(2) {
+                            background-image: url(../img/images/herobg2.jpg);
+                            background-position-x: 40%;
+                        }
+    
+                        &:nth-child(3) {
+                            background-image: url(../img/images/herobg3.png);
+                            background-position-x: 40%;
+                        }
+    
+                        .heading {
+                            text-align: center;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 36px;
+                            line-height: 44px;
+                            text-align: center;
+                            color: #fff;
+                            flex: none;
+                            order: 0;
+                            flex-grow: 0;
+                        }
+    
+                        .desc {
+                            width: 416px;
+                            margin: 0 auto;
+                            text-align: center;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-align: center;
+                            color: #fff;
+                            flex: none;
+                            order: 1;
+                            flex-grow: 0;
+                            margin-bottom: 268px;
+                        }
+                    }
+                }
+    
+                .carousel-sindicators-hero {
+                    position: absolute;
+                    right: 8%;
+                    bottom: 18%;
+    
+                    .arrows-hero {
+                        padding: 12px 15px;
+                        border-radius: 50%;
+                        border: none;
+                        cursor: pointer;
+    
+                        &:nth-child(1) {
+                            margin-right: 10px;
+    
+                            img {
+                                transform: rotateZ(180deg);
+                            }
+                        }
+                    }
+                }
+    
+                .searchPart {
+                    position: relative;
+    
+                    .searchCars {
+                        background: var(--white);
+                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                        border-radius: 100px;
+                        border: none;
+                        padding: 22px 30px;
+                        width: 60%;
+                        display: block;
+                        margin: 0 auto;
+                        transform: translateY(-50%);
+                        color: #c9d1d9;
+                        vertical-align: middle;
+    
+                        &::placeholder {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: var(--descs);
+                        }
+    
+                        &:focus {
+                            outline: 2px solid rgba(4, 189, 106, 0.382);
+                        }
+                    }
+    
+                    .searchBtn {
+                        position: absolute;
+                        top: -47.4%;
+                        background: #299764;
+                        border-radius: 100px;
+                        border: none;
+                        padding: 18px;
+                        right: 20.12%;
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+    
+        }
+}
+
+@media only screen and (max-width: 536px){
+        .hero {
+                margin-bottom: 100px;
+                position: relative;
+                top: 83px;
+        
+                .heroWrapper {
+                    position: relative;
+        
+        
+                    .heroCarousels {
+                        display: grid;
+                        grid-template-columns: repeat(3, 100%);
+                        overflow-x: hidden;
+                        scroll-behavior: smooth;
+        
+                        .Herowrapper {
+                            padding: 100px 0;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            scroll-behavior: smooth;
+                            transition: all 0.8s;
+        
+                            &:nth-child(1) {
+                                background-image: url("../../img/images/heromobilebg1.jpg");
+                                width: 100%;
+                                background-position-x: 65%;
+                            }
+        
+                            &:nth-child(2) {
+                                background-image: url(../img/images/herobg2.jpg);
+                                background-position-x: 65%;
+                            }
+        
+                            &:nth-child(3) {
+                                background-image: url(../img/images/herobg3.png);
+                                background-position-x: 65%;
+                            }
+        
+                            .heading {
+                                text-align: center;
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 36px;
+                                line-height: 44px;
+                                text-align: center;
+                                color: #fff;
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                                margin-bottom: 15px;
+                            }
+        
+                            .desc {
+                                width: 340px;
+                                margin: 0 auto;
+                                text-align: center;
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-align: center;
+                                color: #fff;
+                                flex: none;
+                                order: 1;
+                                flex-grow: 0;
+                                margin-bottom: 268px;
+                            }
+                        }
+                    }
+        
+                    .carousel-sindicators-hero {
+                        position: absolute;
+                        right: 8%;
+                        bottom: 18%;
+        
+                        .arrows-hero {
+                            padding: 12px 15px;
+                            border-radius: 50%;
+                            border: none;
+                            cursor: pointer;
+        
+                            &:nth-child(1) {
+                                margin-right: 10px;
+        
+                                img {
+                                    transform: rotateZ(180deg);
+                                }
+                            }
+                        }
+                    }
+        
+                    .searchPart {
+                        position: relative;
+        
+                        .searchCars {
+                            background: var(--white);
+                            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                            border-radius: 100px;
+                            border: none;
+                            padding: 22px 30px;
+                            width: 60%;
+                            display: block;
+                            margin: 0 auto;
+                            transform: translateY(-50%);
+                            color: #c9d1d9;
+                            vertical-align: middle;
+        
+                            &::placeholder {
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 8px;
+                                line-height: 22px;
+                                color: var(--descs);
+
+                            }
+        
+                            &:focus {
+                                outline: 2px solid rgba(4, 189, 106, 0.382);
+                            }
+                        }
+        
+                        .searchBtn {
+                            position: absolute;
+                            top: -47.4%;
+                            background: #299764;
+                            border-radius: 100px;
+                            border: none;
+                            padding: 18px;
+                            right: 20.12%;
+                            cursor: pointer;
+                        }
+                    }
+                }
+        
+        
+            }
+}

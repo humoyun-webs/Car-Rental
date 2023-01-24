@@ -1,0 +1,94 @@
+.Brands {
+    padding: 150px 0;
+
+    .brandLogosWrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 140px);
+        gap: 66px;
+
+        .brandLogo{
+            img{
+                filter: var(--svg-color);
+            }
+        }
+    }
+
+    .BrnadsSlogan {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--black);
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-bottom: 34px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .Brands {
+            padding: 150px 0;
+    
+            .brandLogosWrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 120px);
+                justify-content: center;
+                gap: 66px;
+    
+                .brandLogo {
+                    img {
+                        filter: var(--svg-color);
+                    }
+                }
+            }
+    
+            .BrnadsSlogan {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: var(--black);
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin-bottom: 34px;
+                text-align: center;
+            }
+        }
+}
+
+@media only screen and (max-width: 596px){
+        .Brands {
+                padding: 150px 0;
+        
+                .brandLogosWrapper {
+                    display: grid;
+                    grid-template-columns: repeat(2, 100px);
+                    justify-content: center;
+                    gap: 66px;
+        
+                    .brandLogo {
+                        img {
+                            filter: var(--svg-color);
+                        }
+                    }
+                }
+        
+                .BrnadsSlogan {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 21px;
+                    line-height: 29px;
+                    color: var(--black);
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                    margin-bottom: 34px;
+                    text-align: center;
+                }
+            }
+}
